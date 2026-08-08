@@ -79,7 +79,7 @@ graph TD
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
-##📁 Repository Structure
+## 📁 Repository Structure
 ```text
 langchain-document-assistant/
 ├── .github/
@@ -155,15 +155,6 @@ docker pull ghcr.io/hamed-payanda/langchain-assistant:latest
 docker run -p 8000:8000 ghcr.io/hamed-payanda/langchain-assistant:latest
 ```
 
-
-
-
-
-
-
-
-
-
 ## How to get watsonx API key and Project ID
 
 Here, we initialize a language model and its embeddings. Here's a brief description of each section of the script:
@@ -202,3 +193,20 @@ After you create a project, you can go to the project’s `Manage` tab > select 
 Lastly, you can follow the below demonstration to create/get your [IBM Cloud user API key](https://cloud.ibm.com/iam/apikeys?utm_source=skills_network&utm_content=in_lab_content_link&utm_id=Lab-test1_v1_1702536549). Be sure to write your API key down somewhere right after you create it, because you won’t be able to see it again!
 
 ![Getting IBM cloud user API key](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMSkillsNetwork-GPXX0PPIEN/ezgif.com-video-to-gif.gif)
+5. **Update Code:** 
+In server.py, switch the import to import worker as worker, and set your credentials in worker.py:
+```python
+Watsonx_API = "YOUR_WATSONX_API_KEY"
+Project_id = "YOUR_PROJECT_ID"
+```
+📜 License
+Distributed under the Apache-2.0 License. See LICENSE for more information.
+👤 Author
+Hamed Payanda
+•	GitHub: @HAMED-PAYANDA
+•	Completed as part of the IBM AI Developer Program
+
+
+
+
+

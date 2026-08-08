@@ -105,7 +105,7 @@ langchain-document-assistant/
 └── demo10.png                    # Visual proof screenshot
 ```
 
-##🚀 Local Setup & Execution
+## ⚙️ Local Setup & Execution
 
 Option 1: Running via Local Python Environment
 	1.	Clone the Repository:
@@ -201,10 +201,12 @@ Project_id = "YOUR_PROJECT_ID"
 ```
 📜 License
 Distributed under the Apache-2.0 License. See LICENSE for more information.
+
 👤 Author
 Hamed Payanda
 •	GitHub: @HAMED-PAYANDA
 •	Completed as part of the IBM AI Developer Program
+
 
 
 

@@ -51,12 +51,13 @@ graph TD
     Server -->|JSON Response| User
 ```
 ## ✨ Key Features
-•	Grounded RAG Pipeline: Eliminates AI hallucinations by restricting response generation to uploaded PDF context chunks (‭$k=3$‬‭‬).
-•	Dual Backend Support: Modular worker design allowing quick switching between Hugging Face Inference API and IBM Watsonx.
-•	Real-time Vector Search: In-memory vector database powered by ChromaDB and sentence-transformers/all-MiniLM-L6-v2.
-•	Full-Stack REST Architecture: Async JavaScript frontend communicating with a lightweight Flask web server.
-•	Containerized & CI/CD Ready: Packaged via Docker and automatically built/published to the GitHub Container Registry (GHCR) via GitHub Actions.
 
+* 🎯 **Grounded RAG Pipeline:** Eliminates AI hallucinations by restricting response generation strictly to the uploaded PDF context chunks ($k=3$).
+* 🔄 **Dual Backend Support:** Modular worker design allowing seamless switching between the **Hugging Face Inference API** (Llama 3.1) and **IBM Watsonx**.
+* ⚡ **Real-time Vector Search:** Fast, in-memory vector database powered by **ChromaDB** and `sentence-transformers/all-MiniLM-L6-v2`.
+* 🌐 **Full-Stack REST Architecture:** Responsive, asynchronous JavaScript frontend communicating with a lightweight **Flask** web backend.
+* 🐳 **Containerized & CI/CD Ready:** Fully packaged via **Docker** and automatically built and published to the **GitHub Container Registry (GHCR)** using GitHub Actions.
+    
 ## 🛠️ Core Tech Stack
 
 **Languages & Frontend:**<br>
@@ -193,6 +194,7 @@ After you create a project, you can go to the project’s `Manage` tab > select 
 Lastly, you can follow the below demonstration to create/get your [IBM Cloud user API key](https://cloud.ibm.com/iam/apikeys?utm_source=skills_network&utm_content=in_lab_content_link&utm_id=Lab-test1_v1_1702536549). Be sure to write your API key down somewhere right after you create it, because you won’t be able to see it again!
 
 ![Getting IBM cloud user API key](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMSkillsNetwork-GPXX0PPIEN/ezgif.com-video-to-gif.gif)
+
 5. **Update Code:** 
 In server.py, switch the import to import worker as worker, and set your credentials in worker.py:
 ```python

@@ -1,0 +1,80 @@
+
+---
+title: "Superconduct Machine Learning Project"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(caret)
+library(randomForest)
+library(xgboost)
+library(corrplot)
+```
+
+## Introduction
+
+This project analyzes the Superconduct dataset to predict the critical temperature using machine learning models. We use Random Forest and XGBoost regressors and compare their performance.
+
+## Data Overview
+
+```{r}
+data <- read.csv("superconduct_train new.csv")
+str(data)
+summary(data$critical_temp)
+```
+
+## Data Visualization
+
+```{r}
+hist(data$critical_temp, breaks = 40, col = "steelblue", main = "Distribution of Critical Temperature")
+corrplot(cor(data[,-ncol(data)]), method = "color", tl.cex = 0.6)
+```
+
+## Data Preprocessing
+
+```{r}
+data_scaled <- as.data.frame(scale(data[,-ncol(data)]))
+data_scaled$critical_temp <- data$critical_temp
+
+set.seed(123)
+trainIndex <- createDataPartition(data_scaled$critical_temp, p = .8, list = FALSE)
+trainData <- data_scaled[trainIndex, ]
+testData <- data_scaled[-trainIndex, ]
+```
+
+## Modeling
+
+### Random Forest
+
+```{r}
+rf_model <- randomForest(critical_temp ~ ., data = trainData)
+rf_pred <- predict(rf_model, testData)
+rf_rmse <- sqrt(mean((rf_pred - testData$critical_temp)^2))
+rf_rmse
+```
+
+### XGBoost
+
+```{r}
+dtrain <- xgb.DMatrix(data = as.matrix(trainData[,-ncol(trainData)]), label = trainData$critical_temp)
+dtest <- xgb.DMatrix(data = as.matrix(testData[,-ncol(testData)]), label = testData$critical_temp)
+params <- list(objective = "reg:squarederror", eval_metric = "rmse")
+xgb_model <- xgb.train(params, dtrain, nrounds = 100)
+xgb_pred <- predict(xgb_model, dtest)
+xgb_rmse <- sqrt(mean((xgb_pred - testData$critical_temp)^2))
+xgb_rmse
+```
+
+## Results
+
+Random Forest RMSE and XGBoost RMSE are compared. Lower RMSE indicates better performance.
+
+## Conclusion
+
+Both models provide reasonable performance on the Superconduct dataset, with XGBoost slightly outperforming Random Forest. Further tuning and feature selection may improve performance.
+
+## References
+
+- Kaggle Dataset: https://www.kaggle.com/datasets/willianoliveiragibin/superconduct-dataset

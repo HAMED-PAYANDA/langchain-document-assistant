@@ -6,6 +6,7 @@
 [![Python 3.10](https://img.shields.io/badge/Python-3.10-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![LangChain](https://img.shields.io/badge/LangChain-0.3.27-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)](https://www.langchain.com/)
 [![Flask](https://img.shields.io/badge/Flask-Framework-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
+[![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)](#)
 
 An end-to-end **Retrieval-Augmented Generation (RAG)** web application capable of ingesting PDF documents, chunking and vectorizing text in real time, and delivering context-grounded answers. Built with **LangChain**, **Flask**, **Chroma DB**, and dual backend integration for **Hugging Face** (Llama-3.1-8B-Instruct) and **IBM Watsonx**.
 

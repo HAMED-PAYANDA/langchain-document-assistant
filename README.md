@@ -4,8 +4,16 @@
 [![Docker CI/CD Pipeline](https://img.shields.io/github/actions/workflow/status/HAMED-PAYANDA/langchain-document-assistant/docker-publish.yml?branch=main&style=for-the-badge&logo=docker&label=Docker%20CI%2FCD)](https://github.com/HAMED-PAYANDA/langchain-document-assistant/actions)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=for-the-badge)](https://opensource.org/licenses/Apache-2.0)
 [![Python 3.10](https://img.shields.io/badge/Python-3.10-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![LangChain](https://img.shields.io/badge/LangChain-0.3.27-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)](https://www.langchain.com/)
 [![Flask](https://img.shields.io/badge/Flask-Framework-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+[![LangChain](https://img.shields.io/badge/LangChain-0.3.27-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)](https://www.langchain.com/)
+![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=000)
+![Meta Llama](https://img.shields.io/badge/Meta%20Llama%203.1-0467DF?style=for-the-badge&logo=meta&logoColor=white)
+![IBM Watsonx](https://img.shields.io/badge/IBM%20Watsonx-052FAD?style=for-the-badge&logo=ibm&logoColor=white)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-FF4F00?style=for-the-badge)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 [![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)](#)
 
 An end-to-end **Retrieval-Augmented Generation (RAG)** web application capable of ingesting PDF documents, chunking and vectorizing text in real time, and delivering context-grounded answers. Built with **LangChain**, **Flask**, **Chroma DB**, and dual backend integration for **Hugging Face** (Llama-3.1-8B-Instruct) and **IBM Watsonx**.

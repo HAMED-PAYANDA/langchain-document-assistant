@@ -13,7 +13,6 @@
 ![Meta Llama](https://img.shields.io/badge/Meta%20Llama%203.1-0467DF?style=for-the-badge&logo=meta&logoColor=white)
 ![IBM Watsonx](https://img.shields.io/badge/IBM%20Watsonx-052FAD?style=for-the-badge&logo=ibm&logoColor=white)
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF4F00?style=for-the-badge)
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 [![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)](#)
 
 An end-to-end **Retrieval-Augmented Generation (RAG)** web application capable of ingesting PDF documents, chunking and vectorizing text in real time, and delivering context-grounded answers. Built with **LangChain**, **Flask**, **Chroma DB**, and dual backend integration for **Hugging Face** (Llama-3.1-8B-Instruct) and **IBM Watsonx**.

@@ -58,6 +58,8 @@ graph TD
     Chain -->|Grounded Response| Server
     Server -->|JSON Response| User
 ```
+---
+
 ## ✨ Key Features
 
 * 🎯 **Grounded RAG Pipeline:** Eliminates AI hallucinations by restricting response generation strictly to the uploaded PDF context chunks ($k=3$).
@@ -65,6 +67,8 @@ graph TD
 * ⚡ **Real-time Vector Search:** Fast, in-memory vector database powered by **ChromaDB** and `sentence-transformers/all-MiniLM-L6-v2`.
 * 🌐 **Full-Stack REST Architecture:** Responsive, asynchronous JavaScript frontend communicating with a lightweight **Flask** web backend.
 * 🐳 **Containerized & CI/CD Ready:** Fully packaged via **Docker** and automatically built and published to the **GitHub Container Registry (GHCR)** using GitHub Actions.
+
+---
     
 ## 🛠️ Core Tech Stack
 
@@ -87,6 +91,8 @@ graph TD
 **DevOps & Deployment:**<br>
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
+---
 
 ## 📁 Repository Structure
 ```text
@@ -113,6 +119,7 @@ langchain-document-assistant/
 ├── demo9.png                     # Visual proof screenshot
 └── demo10.png                    # Visual proof screenshot
 ```
+---
 
 ## ⚙️ Local Setup & Execution
 
@@ -209,13 +216,17 @@ In server.py, switch the import to import worker as worker, and set your credent
 Watsonx_API = "YOUR_WATSONX_API_KEY"
 Project_id = "YOUR_PROJECT_ID"
 ```
-📜 License
-Distributed under the Apache-2.0 License. See LICENSE for more information.
+---
 
-👤 Author
-Hamed Payanda
-•	GitHub: @HAMED-PAYANDA
-•	Completed as part of the IBM AI Developer Program
+📜 License
+This project is licensed under the [Apache 2.0 License](LICENSE).
+
+## 👤 Author
+
+**Hamed Payanda**
+* **GitHub:** [@HAMED-PAYANDA](https://github.com/HAMED-PAYANDA)
+* Completed as part of the **IBM AI Developer Program**.
+
 
 
 
